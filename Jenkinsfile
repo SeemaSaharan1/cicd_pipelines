@@ -10,7 +10,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false, 
                     extensions: [], 
                     submoduleCfg: [], 
-                    userRemoteConfigs: [[url: 'https://github.com/rupsysachdeva/new.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/SeemaSaharan1/cicd_pipelines.git']]
                 ])
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Copy the code to the Apache document root directory
                 bat script: '''
-                    xcopy /s /e /y "C:\\Users\\Win11\\OneDrive\\Desktop\\test2" "C:\\Apache24\\htdocs"
+                    xcopy /s /e /y "D:\\git-tour-project" "C:\\Apache24\\htdocs"
                 '''
             }
         }
